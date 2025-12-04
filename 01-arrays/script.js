@@ -26,11 +26,9 @@ console.log(teachers);
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
 const firstTeacher = teachers[0];
-teachers[0] = teachers[1];
-teachers[1] = teachers[2];
-teachers[2] = teachers[3];
-teachers[3] = teachers[4];
-teachers[4] = teachers[5];
+for (let i = 0; i < teachers.length; i++) {
+  teachers[i] = teachers[i + 1];
+}
 teachers.length = 5;
 console.log(teachers);
 
@@ -39,6 +37,7 @@ teachers.push("Vanessa");
 console.log(teachers);
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
+
 console.log(teachers);
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
