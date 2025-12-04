@@ -57,5 +57,12 @@ console.log(mineLewisIndex);
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
-console.log(teachers);
+let isEmpty;
+if (teachers.length === 0) {
+  isEmpty = true;
+}
+else {
+  isEmpty = false;
+}
+const isTeachersEmpty = isEmpty;
+console.log(isTeachersEmpty);
